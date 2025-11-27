@@ -1,0 +1,214 @@
+
+.AnimationLinear 
+{
+opacity:1 !important;
+z-index:2 !important;
+animation:Call_With_height_after_width 2s ease-in; 
+}
+
+@keyframes Call_With_height_after_width 
+{
+
+0%
+{
+width:0;
+height:0;
+top:10%;
+}
+ 
+25%
+{
+width:100%;
+height:0;
+top:10%
+}
+
+100% 
+{
+width:100%;
+height:100%;
+top:10%;
+}
+
+}
+
+@media screen and (max-width:500px)
+{
+
+@keyframes Call_With_height_after_width 
+{
+
+0%
+{
+width:0;
+height:0;
+top:0;
+}
+ 
+25%
+{
+width:100%;
+height:0;
+top:0;
+}
+
+100% 
+{
+width:100%;
+height:100%;
+top:0;
+}
+
+}
+
+}
+
+.RemoveAnimationLinear 
+{
+opacity:0;
+transition:.2s ease-in !important;
+}
+
+
+@keyframes MostChildComponents
+{
+0%
+{
+opacity:0;
+}
+
+25%
+{
+opacity:0;
+}
+
+100%
+{
+opacity:1;
+}
+}
+
+.CallChild
+{
+opacity:1;
+animation:MostChildComponents .4s ease-in !important;
+}
+
+.RemoveCallChild 
+{
+opacity:0;
+}
+
+.RemoverPorEnquanto 
+{
+display:none;
+}
+
+.DisabledButtonO::before,
+.DisabledButtonX::before 
+{
+animation:upfordown .2s ease-in;
+}
+
+
+@keyframes upfordown 
+{
+
+0% 
+{
+width:100%;
+height:0;
+top:0;
+}
+
+100% 
+{
+width:100%;
+height:100%;
+top:0;
+}
+
+}
+ 
+.AnimationStart 
+{
+animation:Start 1s ease-in;
+width:100%;
+height:100%;
+position:absolute;
+background:#000000b8 !important;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+top:0;
+left:0;
+transition:.2s ease-in;
+}
+
+@keyframes Start 
+{
+
+0% 
+{
+opacity:0;
+}
+
+50%
+{
+opacity:1;
+}
+
+100%
+{
+opacity:0;
+}
+
+}
+
+.Paint-X 
+{
+background:linear-gradient(36deg, #ff246f, #ff2eda); 
+z-index: 0; 
+}
+
+.Paint-O 
+{
+background:linear-gradient(45deg,rgb(20, 75, 255), #337bff); 
+z-index: 0;   
+}
+
+.Paint-X,
+.Paint-O 
+{
+transition:.2s ease-in;
+}
+ 
+.soft
+{
+transition:.2s ease-in all;
+animation:Suavidade 1s ease-in;
+}
+
+@keyframes Suavidade 
+{
+0% 
+{
+opacity:0;
+}
+
+100%
+{
+opacity:1;
+}
+}
+ 
+.AnimationImg:hover
+{
+transform:scale(1.1);
+transition:.2s ease-in;
+background-image:url(../C-BackgroundForSetas/SetasReset.png);
+background-repeat:no-repeat;
+}
+
+ 

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tic Tac Toe</title>
+
+<link rel="stylesheet" href="Style/globals.css">
+<link rel="stylesheet" href="Style/style.css">
+<link rel="stylesheet" href="Style/styleDevice.css">
+<link rel="stylesheet" href="Style/Animation.css">
+ 
+</head>
+<body draggable="false" class="Daddy Red">  
+
+<button class="OpenGaming" type="button">
+<img src="./LogoTipoJogoDaVelhaX.jpg" class="FlowerButton"  alt="Top_Image.jpg" draggable="false">
+Jogo Da Velha
+<img src="./LogoTipoJogoDaVelhaX2.jpg" class="OtherFlowerButton" alt="Down_Image.jpg" draggable="false">
+</button>
+
+<div class="Container">
+
+<div class="SubContainer">
+
+<div class="ContainerX RemoverPorEnquanto">
+<i class="fa-solid fa-xmark xStyle"></i>
+Fechar  
+</div>
+
+<div class="GameContainer RemoverPorEnquanto">
+    
+<div class="Game">
+    
+<div id="box" class="BoxForMarks Box1">
+<div class="Place" data-position="0"></div>
+</div>
+
+<div id="box" class="BoxForMarks Box2">
+<div class="Place" data-position="1"></div>
+</div>
+
+<div id="box" class="BoxForMarks Box3">
+<div class="Place" data-position="2"></div>
+</div>
+
+<div id="box" class="BoxForMarks Box4">
+<div class="Place" data-position="3"></div>
+</div>
+
+<div id="box" class="BoxForMarks Box5">
+<div class="Place" data-position="4"></div>
+</div>
+
+<div id="box" class="BoxForMarks Box6">
+<div class="Place" data-position="5"></div>
+</div>
+
+<div id="box" class="BoxForMarks Box7">
+<div class="Place" data-position="6"></div>
+</div>
+
+<div id="box" class="BoxForMarks Box8">
+<div class="Place" data-position="7"></div>
+</div>
+
+<div id="box" class="BoxForMarks Box9">
+<div class="Place" data-position="8"></div>
+</div>
+
+</div>
+
+<div class="Container-Options">
+
+<div class="ContainerEscolha">
+<h2 class="HeadingMenu" draggable="false">Qual marcação você escolhe?</h2>
+<span></span>
+</div>
+
+<div class="MenuX_And_O">
+
+<div class="Standard X-Option ClickX" id="XButton">
+<img src="./X-Option.png" draggable="false" class="imgX" alt="X_Option.png">
+</div>
+
+<div class="Standard O-Option ClickO">
+<img src="./O-Option.png" draggable="false" class="w-Ximg imgO ImgGlobalO" class="w-Ximg" alt="O_Option.png">
+</div>
+ 
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div class="NotYet">
+<p class="ParagraphConvite"></p>
+<p class="None"></p>
+
+<div class="SubContainerButtons">
+<button class="yea-not Yea" type="button"></button>
+<button class="yea-not Not" type="button"></button>
+</div>
+
+<p class="Nothing"></p>
+
+</div>
+
+<div class="Dificulty RemoverPorEnquanto">
+
+<div class="ContainerDificulty">
+    
+<div name="Nivel" class="SubDificulty">
+
+<div class="ContainerMenu">
+<img class="SetaImg" src="./D-PlanilhaDeLevel/Menu_Red_Impossible.png" alt="Menu-Seta"/>
+</div>
+
+<button class="StyleDificulty ClickLevel" type="submit" value="Facil">
+<img class="LevelImg Facil" title="Facil" src="./D-PlanilhaDeLevel/1-LevelFast.png" alt="LevelFast"/>
+</button>
+
+<button class="StyleDificulty ClickLevel" type="submit" value="Medio">
+<img class="LevelImg Medio" title="Médio" src="./D-PlanilhaDeLevel/2-LevelMedium.png" alt="LevelMedium"/>
+</button>
+
+<button class="StyleDificulty ClickLevel" type="submit" value="Dificil">
+<img class="LevelImg Dificil" title="Difícil" src="./D-PlanilhaDeLevel/3-LevelHard.png" alt="LevelHard"/>
+</button>
+
+<button class="StyleDificulty ClickLevel" type="submit" value="Impossível">
+<img class="LevelImg Impossível" title="Impossível" src="./D-PlanilhaDeLevel/4-LevelImpossible.png" alt="LevelImpossível" />
+</button>
+
+</div>
+
+</div>
+
+<div class="ContainerPlacar">
+<p class="characterStyle"><img src="A-HumanExpression/GirlHappy.png" class="Humano" alt="Girl.png"> : <span class="PlacarPlayer">0</span></p>
+<p class="StyleDesafio"><span class="color-Red">V</span><span class="color-Blue">S</span></p>
+<p class="characterStyle "><img src="B-Robot-Expression/Robot_Happy_Neutral.png" class="Robo" alt="Robot.png">: <span class="PlacarRobot">0</span></p>
+</div>
+
+<div>
+<button class="ButtonReset" type="button" title="Resetar">
+<img src="C-BackgroundForSetas/BackgroudForSetas.png" class="AnimationImg" alt="SetaBackground">
+</button>
+</div>
+
+</div>
+
+</div>
+
+
+<script src="./FontAwesomeFree-Web/fontawesome-free-7.0.0-web/js/all.js"></script>
+
+<script src="./Functions/CallGame/TicTacToe-Script.js"></script>
+<script src="./Functions/SystemGame/SystemClickX_O.js"></script>
+
+</body>
+</html>

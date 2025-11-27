@@ -1,0 +1,170 @@
+
+@media screen and (max-width:999px)
+{
+
+.MoveParagraph
+{
+font-size:22px !important;
+}
+
+.PlayAgain 
+{
+font-size:20px !important;
+}
+
+.Apareca 
+{
+border:2px solid pink !important;
+}
+
+}
+
+ 
+@media screen and (max-width:750px)
+{
+
+.GameContainer 
+{
+position:relative;
+height:100% !important;
+width:100%;
+}
+
+.GameContainer .Game 
+{
+width:100% !important;
+
+}
+
+.GameContainer .Game,
+.RemoveContainerOptions
+{
+display:none;
+}
+
+.TurnDisplay 
+{
+display:grid !important;
+}
+
+.Container-Options
+{
+border:none !important;
+width:100%;
+justify-content:center !important;
+}
+
+.MenuX_And_O
+{
+border:none !important;
+width:100% !important;
+height:50px;
+flex-direction:row !important;
+}
+
+.HeadingMenu,
+.TextOStyle,
+.TextXStyle
+{
+margin:0 5px 15px 0;
+}
+
+.X-Option 
+{
+border-bottom:none !important;
+border-right:3px solid var(--Color-Border);
+background:rgb(13, 13, 14);
+}
+
+.O-Option 
+{
+background:rgb(17, 17, 17);
+}
+
+.X-Option,
+.O-Option
+{
+width:50%;
+}
+
+.MenuX_And_O .X-Option img
+{
+width:50px;
+height:50px;
+}
+    
+.MenuX_And_O .O-Option img 
+{
+width:35px;
+height:35px;
+}
+
+.GameContainer,
+.GameContainer .Game
+{
+width:100% !important;
+}
+ 
+ 
+}
+
+@media screen and (max-width:684px)
+{
+
+.Dificulty
+{
+padding:0 10px;
+}
+ 
+}
+
+@media screen and (max-width:662px)
+{
+
+.SetaImg 
+{
+width:28px;
+height:28px;
+}
+
+.StyleDificulty img 
+{
+width:65% !important;
+}
+
+}
+ 
+@media screen and (max-width:500px)
+{
+.Dificulty 
+{
+flex-wrap:wrap;
+}
+
+.Container 
+{
+max-height: 100%;
+}
+
+
+
+.SetaImg
+{
+width:30px !important;
+height:30px !important;
+}
+
+.LevelImg
+{
+width:40px !important;
+}
+
+.characterStyle img 
+{
+width:40px;
+height:40px;
+}
+
+}
+
+ 

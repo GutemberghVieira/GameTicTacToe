@@ -1,0 +1,705 @@
+
+.Daddy
+{
+width:100%;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background-image:url(../BackgroundBody.jpg);
+background-size:100% 100%;
+background-repeat:no-repeat;
+}
+
+.Red 
+{
+--Color-Border:rgb(255,20,98);
+--Text-Color-Hover:#F61562;
+--ResetBackground: #f98484;
+--ResetShadow:4px 4px 4px inset #ff1000;
+}
+
+.Blue 
+{
+--Color-Border:#2556ff;
+--Text-Color-Hover:rgb(48 106 255);
+--ResetBackground: #849af9;
+--ResetShadow:4px 4px 4px inset #0056ff;
+}
+
+.Daddy .OpenGaming
+{
+padding:8px;
+width:250px;
+font-weight:bold;
+color:#fff;
+background:linear-gradient(50deg,#0a0a0a,#000);
+text-align:center;
+border:none;
+display:flex;
+align-items:center;
+justify-content:space-around;
+cursor: pointer;
+font-size:18px;
+border-radius:10px;
+border:2px solid var(--Color-Border);
+box-shadow:1px 1px 5px var(--Color-Border);
+position:relative;
+z-index:1;
+}
+
+.Container
+{
+width:100%;
+max-width:1050px;
+max-height:80%;
+height:100%;
+background:linear-gradient(85deg,#0e0d0d,#000);
+border:2px solid var(--Color-Border);
+box-shadow:1px 1px 5px 2px var(--Color-Border);
+display:flex;
+align-items:center;
+justify-content:center;
+position:absolute;
+transition:.1s ease-in-out;
+opacity:0;
+flex-direction:column;
+}
+
+.SubContainer 
+{
+width:100%;
+height:100%;
+display:flex;
+align-items:end;
+justify-content:center;
+}
+
+.GameContainer 
+{
+display:flex;
+align-items:center;
+justify-content:center;
+width:88%;
+height:88%;
+padding:10px;
+}
+
+.GameContainer,
+.ContainerX
+{
+opacity:0;
+}
+ 
+.Game 
+{
+width:100%;
+height:100%;
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+grid-template-rows:1fr 1fr 1fr;
+align-items:center;
+justify-content:center;
+padding:0 20px;
+position:relative;
+}
+ 
+.Box1
+{
+border-right:4px solid var(--Color-Border);
+border-bottom:4px solid var(--Color-Border);
+}
+
+.Box2
+{
+border-right:4px solid var(--Color-Border);
+border-bottom:4px solid var(--Color-Border);
+}
+
+.Box3
+{
+border-bottom:4px solid var(--Color-Border);
+}
+
+.Box4
+{
+border-right:4px solid var(--Color-Border);
+border-bottom:4px solid var(--Color-Border);
+}
+
+.Box5
+{
+border-right:4px solid var(--Color-Border);
+border-bottom:4px solid var(--Color-Border);
+}
+
+.Box6
+{
+border-bottom:4px solid var(--Color-Border);
+}
+
+.Box7
+{
+border-right:4px solid var(--Color-Border);
+}
+
+.Box8
+{
+border-right:4px solid var(--Color-Border);
+}
+
+.Container-Options 
+{
+border-right:2px solid var(--Color-Border);
+border-left:2px solid var(--Color-Border);
+width:30%;
+height:100%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-direction:column;
+}
+
+.MenuX_And_O
+{
+width:100%;
+height:100%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+flex-direction:column;
+}
+
+.X-Option 
+{
+border-bottom:2px solid var(--Color-Border);
+}
+
+.X-Option,
+.O-Option
+{
+width:100%;
+height:100%;
+cursor:pointer;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+}
+
+.ClickX img,
+.ClickO img 
+{
+position:absolute;
+}
+
+.X-Option img
+{
+width:100px;
+height:100px;
+}
+
+.O-Option .w-Ximg 
+{
+width:70px;
+height:70px;
+}
+
+.ContainerX 
+{
+position:absolute;
+display:flex;
+align-items:center;
+background:var(--Color-Border);
+top:1%;
+right:1%;
+padding:5px;
+font-weight:bold;
+cursor:pointer;
+z-index:3;
+}
+
+.xStyle 
+{
+color:#000;
+font-size:22px;
+}
+
+
+.DisabledButtonX::before,
+.DisabledButtonO::before
+{
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+background:#000000b8 !important;
+z-index:3 !important;
+cursor:default !important;
+}
+
+.ContainerEscolha 
+{
+width:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.HeadingMenu 
+{
+color:#fff;
+font-size:12px;
+text-align:center;
+padding:2px;
+}
+
+.HeadingMenu,
+.TextOStyle,
+.TextXStyle
+{
+transition:.2s ease-in;
+}
+
+.TextOStyle,
+.TextXStyle
+{
+font-weight:bold;
+font-size:14px;
+display:block;
+margin:0 5px;
+}
+
+.TextOStyle
+{
+color:#33A4E2;
+}
+
+.TextXStyle 
+{
+color:#F61562;
+}
+
+.BoxForMarks 
+{
+width:100%;
+height:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.Balls 
+{
+width:20px;
+height:20px;
+background:#fff;
+border-radius:50px;
+transition:.2s ease-in;
+cursor:pointer;
+} 
+
+.X 
+{
+background-image:url("../X-Option.png") !important;
+width:90px;
+height:90px;
+transition:.2s ease-in;
+background-size:cover;
+z-index:-2;
+}
+
+.O 
+{
+background-image:url("../O-Option.png") !important;
+width:67px;
+height:67px;
+transition:.2s ease-in;
+background-size:cover;
+z-index:-2;
+}
+
+.X-White-Win 
+{
+background-image:url("../X-Option-White.png") !important;
+}
+
+.O-White-Win 
+{
+background-image:url("../O-Option-White.png") !important;
+}
+
+.Adiciton,
+h2,
+button,
+img,
+span,
+svg
+{
+user-select:none;
+}
+
+.NotYet 
+{
+opacity:0;
+position:absolute;
+}
+
+.yea-not 
+{
+z-index:-3 !important;
+}
+
+.ContainerConvite 
+{
+width:100%;
+height:100%;
+position:absolute;
+background:#000000b8;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+top:0;
+left:0;
+z-index:3;
+transition:.2 ease-in;
+}
+
+.ParagraphConvite 
+{
+color:#fff;
+font-size:25px;
+font-weight:bold;
+}
+ 
+.SubContainerButtons
+{
+padding:10px;
+display:flex;
+}
+ 
+.SubContainerButtons button 
+{
+padding:10px;
+color:#fff;
+background:none;
+margin:0 10px;
+width:70px;
+display:flex;
+align-items:center;
+justify-content:center;
+border:none !important;
+box-shadow:none !important;
+transition:.2s ease-in;
+}
+
+.SubContainerButtons button:hover 
+{
+transform:scale(1.1);
+transition:.2s ease-in;
+color:var(--Text-Color-Hover);
+}
+
+.Apareca 
+{
+z-index:3 !important;
+font-weight: bold;
+font-size: 18px;
+cursor: pointer;
+}
+
+.Restart 
+{
+display:flex !important;
+flex-direction:column !important;
+align-items:center !important;
+justify-content:center !important;
+}
+
+.None,
+.Nothing 
+{
+display:none;
+}
+
+.PlayAgain 
+{
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:24px;
+color:#fff;
+margin:12px 0;
+}
+
+.Yea,
+.Not 
+{
+width:100% !important;
+}
+
+.ResultadoFinalDeJogo 
+{
+padding:10px;
+width:200px;
+font-size:18px;
+color:#fff;
+background:var(--Color-Border);
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:10px;
+cursor:pointer;
+}
+
+.ResultadoFinalDeJogo:hover 
+{
+color:#111;
+background:#fff;
+transition:.2s ease-in;
+}
+
+.softness 
+{
+opacity:0;
+transition:.2s ease-in;
+position:absolute;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+}
+
+.Dificulty
+{
+display:flex;
+align-items:center;
+justify-content:space-around;
+width:100%;
+}
+
+.Dificulty .SubDificulty 
+{
+padding:5px;
+color:#fff;
+font-weight:bold;
+display:flex;
+align-items:center;
+justify-content:left;
+background:transparent;
+background:linear-gradient(36deg, #191a21, #000000);
+border-radius:50px;
+transition:.2s ease-in all;
+}
+
+.Tr 
+{
+width:37%;
+}
+
+.NoTr 
+{
+width:100%;
+}
+ 
+.Dificulty .SubDificulty img 
+{
+margin:0 2px;
+width:80px;
+cursor:pointer;
+}
+
+.Dificulty .SubDificulty .ContainerMenu 
+{
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.Dificulty .SubDificulty .ContainerMenu img 
+{
+width:32px;
+height:32px;
+padding:2px;
+}
+
+.ContainerPlacar
+{
+padding:10px;
+margin:0 5px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.ContainerPlacar .StyleDesafio
+{
+font-size:18px;
+color:#fff;
+}
+
+.color-Red 
+{
+color:rgb(255,25,98);
+}
+
+.color-Blue 
+{
+color:#2556ff;
+}
+
+.ContainerPlacar p 
+{
+color:#fff;
+font-weight:bold;
+font-size:15px;
+margin:0 5px;
+display:flex;
+}
+
+.ContainerPlacar p .PlacarPlayer,
+.ContainerPlacar p .PlacarRobot 
+{
+margin:0 0 0 5px;
+}
+
+.EliminateElement 
+{
+z-index:-5;
+}
+
+.Desabilitar 
+{
+z-index:-6
+}
+
+.ContainerDificulty
+{
+display:flex;
+justify-content:left;
+align-items:center;
+width:381px;
+margin:10px 0 0 0;
+}
+
+.AnimateNumber
+{
+animation:Aproximation 1s ease-in;
+transition:.2s ease-in;
+display:block;
+}
+
+@keyframes Aproximation 
+{
+0%
+{
+transform:scale(1);
+}
+
+50%
+{
+transform:scale(1.5);
+}
+
+100%
+{
+transform:scale(1);
+}
+}
+
+.ButtonReset 
+{
+padding:5px !important;
+color:#fff !important;
+width:42px !important;
+height:42px;
+text-align:center !important;
+font-size:15px !important;
+border:none !important;
+border-radius:0 !important;
+cursor:pointer;
+font-weight:bold;
+background:var(--ResetBackground);
+box-shadow:var(--ResetShadow);
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+}
+
+.ButtonReset img 
+{
+width:40px;
+height:40px;
+}
+
+.VisiblePointEvent 
+{
+z-index:2 !important;
+}
+
+.SetaImg
+{
+transition:.2s ease-in;
+rotate:179deg;
+}
+
+.RotateForLeft 
+{
+rotate:179deg;
+}
+
+.RotateForRight 
+{
+rotate:0deg;
+}
+
+.RemoveLevel
+{
+width:0 !important;
+}
+
+.RemoveLevel img
+{
+opacity:0;
+width:0 !important;
+height:100%;
+z-index:-4;
+}
+ 
+.LevelImg
+{
+transition:.2s ease-in;
+}
+
+.StyleDificulty
+{
+border:none;
+outline:none;
+background:transparent;
+width:100%;
+height:35px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.characterStyle 
+{   
+padding:5px 0;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.characterStyle img 
+{
+width:50px;
+height:50px;
+}
+
+.Desabilitar 
+{
+z-index:-3;
+}
